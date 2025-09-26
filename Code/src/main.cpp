@@ -55,10 +55,6 @@ void readSensor() {
   t = dht.readTemperature();
   h = dht.readHumidity();
   dust = dustSensor.readDustDensity();
-
-  if(isnan(t)) t = -999;
-  if(isnan(h)) h = -999;
-  if (dust < 0 || dust > 1000) dust = -999;
 }
 
 // =============== End Sensor ==================
@@ -72,7 +68,7 @@ bool manualMode = false;  // false = Auto, true = Manual
 void sendSensor() {
   readSensor();
 
-  if(isnan(t) && isnan(h))
+  if(isnan(t) || isnan(h) || dust < 0 || dust > 1000)
   {
     // Serial.println("Failed to read from DHT and SharpGP2Y10 sensor !");
     // return;
@@ -89,6 +85,10 @@ void sendSensor() {
   Blynk.virtualWrite(V0 , t);
   Blynk.virtualWrite(V1 , h);
   Blynk.virtualWrite(V2 , dust);
+}
+
+void printValueSenSor() {
+  
 }
 // =========== End Blynk =================
 
@@ -298,12 +298,19 @@ void loop() {
   if(now - lastSend >= SEND_INTERVAL) {
     lastSend = now;
 
+    if (t==-999 || h==-999 || dust<0 || dust>250) {
+      t = -999;
+      h = -999;
+      dust = -999;
+    }
+
     JSONVar data;
     data["temperature"] = t;
     data["humidity"] = h;
     data["dust"] = dust;
     String payload = JSON.stringify(data);
 
+    Serial.println("gia tri doc len Web");
     ws.textAll(payload);
     Serial.println(payload);
 
