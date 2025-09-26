@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=JP Nguon NewDesignator=JP Nguon 5V
+Added Component: Designator=JP Nguon 3V3(CON2)
+Add component (AddParameter): Name = "Value"; Value = "Connector 2"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=JP Nguon 3V3-2
+Added Pin To Net: NetName=GND1 Pin=JP Nguon 3V3-1
+Added Pin To Net: NetName=GND1 Pin=U1-J2-14
+Added Net: Name=GND1
+Added Member To Class: ClassName=Sheet1 Member=Component JP Nguon 3V3 JP2
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-DEVKITC-32D
+Added Room: Name=Sheet1

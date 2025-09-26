@@ -1,0 +1,278 @@
+Added Component: Designator=C3(CP1/2)
+Add component (AddParameter): Name = "Description 1"; Value = "10 => 220uF/6,3V/10V - 10uF => 100uF/16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Description 2"; Value = "0,1uF => 33uF/50V - 10uF => 22uF/63V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Description 3"; Value = "0,47uF => 10uF/100V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF/50V"; VariantName = "[No Variations]"
+Added Component: Designator=D1(D0.5A)
+Add component (AddParameter): Name = "Value"; Value = "1N4007"; VariantName = "[No Variations]"
+Added Component: Designator=D2(D0.5A)
+Add component (AddParameter): Name = "Value"; Value = "1N4007"; VariantName = "[No Variations]"
+Added Component: Designator=D3(D0.5A)
+Add component (AddParameter): Name = "Value"; Value = "1N4007"; VariantName = "[No Variations]"
+Added Component: Designator=J1_2(JP3H)
+Add component (AddParameter): Name = "Value"; Value = "J3"; VariantName = "[No Variations]"
+Added Component: Designator=JP3(JP6)
+Add component (AddParameter): Name = "Value"; Value = "JP7"; VariantName = "[No Variations]"
+Added Component: Designator=LED1(LED-5TRED)
+Add component (AddParameter): Name = "Value"; Value = "LED 3 ly Single Colour"; VariantName = "[No Variations]"
+Added Component: Designator=LED2(LED-5TRED)
+Add component (AddParameter): Name = "Value"; Value = "LED 3 ly Single Colour"; VariantName = "[No Variations]"
+Added Component: Designator=LED3(LED-5TRED)
+Add component (AddParameter): Name = "Value"; Value = "LED 3 ly Single Colour"; VariantName = "[No Variations]"
+Added Component: Designator=QB1(QTO-247)
+Add component (AddParameter): Name = "Value"; Value = "D718"; VariantName = "[No Variations]"
+Added Component: Designator=QB2(QTO-247)
+Add component (AddParameter): Name = "Value"; Value = "D718"; VariantName = "[No Variations]"
+Added Component: Designator=QB3(QTO-247)
+Add component (AddParameter): Name = "Value"; Value = "D718"; VariantName = "[No Variations]"
+Added Component: Designator=R1.1(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1.2(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2.1(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2.2(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3.1(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3.2(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3.3(Res_15mm)
+Add component (AddParameter): Name = "Value"; Value = "R1W - 100"; VariantName = "[No Variations]"
+Added Component: Designator=R3(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=RL1(RL_SPDT_10A)
+Add component (AddParameter): Name = "Value"; Value = "Relay SPDT, 10A, 12V"; VariantName = "[No Variations]"
+Added Component: Designator=RL2(RL_SPDT_10A)
+Add component (AddParameter): Name = "Value"; Value = "Relay SPDT, 10A, 12V"; VariantName = "[No Variations]"
+Added Component: Designator=RL3(RL_SPDT_10A)
+Add component (AddParameter): Name = "Value"; Value = "Relay SPDT, 10A, 12V"; VariantName = "[No Variations]"
+Added Component: Designator=U1(DIP 4)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(MODULE_ESP32-DEVKITC-32D)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ESP32-DEVKITC-32D/Espressif+Systems/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Espressif Systems"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ESP32-DEVKITC-32D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ESP32-DEVKITC-32D/Espressif+Systems/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U2(DIP 4)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U3(DIP 4)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=J1_2-3
+Added Pin To Net: NetName=3V3 Pin=R1-1
+Added Pin To Net: NetName=3V3 Pin=R2-1
+Added Pin To Net: NetName=3V3 Pin=R3-1
+Added Pin To Net: NetName=3V3 Pin=U1-J2-1
+Added Net: Name=3V3
+Added Pin To Net: NetName=5V Pin=D1-2
+Added Pin To Net: NetName=5V Pin=D2-2
+Added Pin To Net: NetName=5V Pin=D3-2
+Added Pin To Net: NetName=5V Pin=JP3-6
+Added Pin To Net: NetName=5V Pin=R3.3-2
+Added Pin To Net: NetName=5V Pin=RL1-5
+Added Pin To Net: NetName=5V Pin=RL2-5
+Added Pin To Net: NetName=5V Pin=RL3-5
+Added Pin To Net: NetName=5V Pin=U1-4
+Added Pin To Net: NetName=5V Pin=U1-J2-19
+Added Pin To Net: NetName=5V Pin=U2-4
+Added Pin To Net: NetName=5V Pin=U3-4
+Added Net: Name=5V
+Added Pin To Net: NetName=COM1 Pin=RL1-1
+Added Net: Name=COM1
+Added Pin To Net: NetName=COM2 Pin=RL2-1
+Added Net: Name=COM2
+Added Pin To Net: NetName=COM3 Pin=RL3-1
+Added Net: Name=COM3
+Added Pin To Net: NetName=Data Pin=J1_2-2
+Added Pin To Net: NetName=Data Pin=U1-J2-12
+Added Net: Name=Data
+Added Pin To Net: NetName=GND1 Pin=C3-1
+Added Pin To Net: NetName=GND1 Pin=J1_2-1
+Added Pin To Net: NetName=GND1 Pin=JP3-2
+Added Pin To Net: NetName=GND1 Pin=JP3-4
+Added Pin To Net: NetName=GND1 Pin=QB1-3
+Added Pin To Net: NetName=GND1 Pin=QB2-3
+Added Pin To Net: NetName=GND1 Pin=QB3-3
+Added Pin To Net: NetName=GND1 Pin=R1.2-2
+Added Pin To Net: NetName=GND1 Pin=R2.2-2
+Added Pin To Net: NetName=GND1 Pin=R3.2-2
+Added Pin To Net: NetName=GND1 Pin=U1-J2-14
+Added Net: Name=GND1
+Added Pin To Net: NetName=LED_DUST Pin=U1-J3-13
+Added Pin To Net: NetName=LED_DUST Pin=U3-2
+Added Net: Name=LED_DUST
+Added Pin To Net: NetName=LED_HUM Pin=U1-J3-8
+Added Pin To Net: NetName=LED_HUM Pin=U2-2
+Added Net: Name=LED_HUM
+Added Pin To Net: NetName=LED_TEMP Pin=U1-2
+Added Pin To Net: NetName=LED_TEMP Pin=U1-J3-3
+Added Net: Name=LED_TEMP
+Added Pin To Net: NetName=LED Pin=JP3-3
+Added Pin To Net: NetName=LED Pin=U1-J2-10
+Added Net: Name=LED
+Added Pin To Net: NetName=NC1 Pin=RL1-2
+Added Net: Name=NC1
+Added Pin To Net: NetName=NC2 Pin=RL2-2
+Added Net: Name=NC2
+Added Pin To Net: NetName=NC3 Pin=RL3-2
+Added Net: Name=NC3
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=QB1-2
+Added Pin To Net: NetName=NetD1_1 Pin=RL1-4
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=QB2-2
+Added Pin To Net: NetName=NetD2_1 Pin=RL2-4
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=QB3-2
+Added Pin To Net: NetName=NetD3_1 Pin=RL3-4
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetLED1_2 Pin=LED1-2
+Added Pin To Net: NetName=NetLED1_2 Pin=R1.2-1
+Added Net: Name=NetLED1_2
+Added Pin To Net: NetName=NetLED2_2 Pin=LED2-2
+Added Pin To Net: NetName=NetLED2_2 Pin=R2.2-1
+Added Net: Name=NetLED2_2
+Added Pin To Net: NetName=NetLED3_2 Pin=LED3-2
+Added Pin To Net: NetName=NetLED3_2 Pin=R3.2-1
+Added Net: Name=NetLED3_2
+Added Pin To Net: NetName=NetQB1_1 Pin=QB1-1
+Added Pin To Net: NetName=NetQB1_1 Pin=R1.1-1
+Added Net: Name=NetQB1_1
+Added Pin To Net: NetName=NetQB2_1 Pin=QB2-1
+Added Pin To Net: NetName=NetQB2_1 Pin=R2.1-1
+Added Net: Name=NetQB2_1
+Added Pin To Net: NetName=NetQB3_1 Pin=QB3-1
+Added Pin To Net: NetName=NetQB3_1 Pin=R3.1-1
+Added Net: Name=NetQB3_1
+Added Pin To Net: NetName=NetR1.1_2 Pin=R1.1-2
+Added Pin To Net: NetName=NetR1.1_2 Pin=U1-3
+Added Net: Name=NetR1.1_2
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=U1-1
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=NetR2.1_2 Pin=R2.1-2
+Added Pin To Net: NetName=NetR2.1_2 Pin=U2-3
+Added Net: Name=NetR2.1_2
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=U2-1
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetR3.1_2 Pin=R3.1-2
+Added Pin To Net: NetName=NetR3.1_2 Pin=U3-3
+Added Net: Name=NetR3.1_2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=U3-1
+Added Net: Name=NetR3_2
+Added Pin To Net: NetName=NO1 Pin=LED1-1
+Added Pin To Net: NetName=NO1 Pin=RL1-3
+Added Net: Name=NO1
+Added Pin To Net: NetName=NO2 Pin=LED2-1
+Added Pin To Net: NetName=NO2 Pin=RL2-3
+Added Net: Name=NO2
+Added Pin To Net: NetName=NO3 Pin=LED3-1
+Added Pin To Net: NetName=NO3 Pin=RL3-3
+Added Net: Name=NO3
+Added Pin To Net: NetName=res Pin=C3-2
+Added Pin To Net: NetName=res Pin=JP3-1
+Added Pin To Net: NetName=res Pin=R3.3-1
+Added Net: Name=res
+Added Pin To Net: NetName=V0 Pin=JP3-5
+Added Pin To Net: NetName=V0 Pin=U1-J2-7
+Added Net: Name=V0
+Added Member To Class: ClassName=Sheet1 Member=Component C3 220uF
+Added Member To Class: ClassName=Sheet1 Member=Component D1 1N4007
+Added Member To Class: ClassName=Sheet1 Member=Component D2 1N4007
+Added Member To Class: ClassName=Sheet1 Member=Component D3 1N4007
+Added Member To Class: ClassName=Sheet1 Member=Component J1_2 DHT11
+Added Member To Class: ClassName=Sheet1 Member=Component JP3 SharpGP2Y10
+Added Member To Class: ClassName=Sheet1 Member=Component LED1 LED
+Added Member To Class: ClassName=Sheet1 Member=Component LED2 LED
+Added Member To Class: ClassName=Sheet1 Member=Component LED3 LED
+Added Member To Class: ClassName=Sheet1 Member=Component QB1 C1815
+Added Member To Class: ClassName=Sheet1 Member=Component QB2 C1815
+Added Member To Class: ClassName=Sheet1 Member=Component QB3 C1815
+Added Member To Class: ClassName=Sheet1 Member=Component R1.1 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R1.2 330
+Added Member To Class: ClassName=Sheet1 Member=Component R1 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R2.1 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R2.2 330
+Added Member To Class: ClassName=Sheet1 Member=Component R2 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R3.1 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R3.2 330
+Added Member To Class: ClassName=Sheet1 Member=Component R3.3 150
+Added Member To Class: ClassName=Sheet1 Member=Component R3 1K
+Added Member To Class: ClassName=Sheet1 Member=Component RL1 Relay 5V
+Added Member To Class: ClassName=Sheet1 Member=Component RL2 Relay 5V
+Added Member To Class: ClassName=Sheet1 Member=Component RL3 Relay 5V
+Added Member To Class: ClassName=Sheet1 Member=Component U1 PC817B
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-DEVKITC-32D
+Added Member To Class: ClassName=Sheet1 Member=Component U2 PC817B
+Added Member To Class: ClassName=Sheet1 Member=Component U3 PC817B
+Added Room: Name=Sheet1

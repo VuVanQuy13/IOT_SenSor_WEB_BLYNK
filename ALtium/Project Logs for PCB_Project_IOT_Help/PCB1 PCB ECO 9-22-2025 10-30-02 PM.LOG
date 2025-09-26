@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND2 Pin=QB1-3
+Removed Pin From Net: NetName=GND2 Pin=QB2-3
+Removed Pin From Net: NetName=GND2 Pin=QB3-3
+Removed Pin From Net: NetName=GND2 Pin=R1.2-2
+Removed Pin From Net: NetName=GND2 Pin=R2.2-2
+Removed Pin From Net: NetName=GND2 Pin=R3.2-2
+Added Pin To Net: NetName=GND3 Pin=QB1-3
+Added Pin To Net: NetName=GND3 Pin=QB2-3
+Added Pin To Net: NetName=GND3 Pin=QB3-3
+Added Pin To Net: NetName=GND3 Pin=R1.2-2
+Added Pin To Net: NetName=GND3 Pin=R2.2-2
+Added Pin To Net: NetName=GND3 Pin=R3.2-2
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-DEVKITC-32D
+Added Room: Name=Sheet1

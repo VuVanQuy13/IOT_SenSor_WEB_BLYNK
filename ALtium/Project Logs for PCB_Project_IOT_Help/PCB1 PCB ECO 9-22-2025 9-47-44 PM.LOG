@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND3 Pin=U1-J3-1
+Added Pin To Net: NetName=GND3 Pin=U1-J2-14
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-DEVKITC-32D
+Added Room: Name=Sheet1

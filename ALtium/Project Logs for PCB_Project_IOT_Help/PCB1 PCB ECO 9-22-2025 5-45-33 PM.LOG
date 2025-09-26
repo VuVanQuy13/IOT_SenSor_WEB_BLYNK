@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND3 Pin=U1-J3-1
+Added Component: Designator=JP Nguon(CON2)
+Add component (AddParameter): Name = "Value"; Value = "Connector 2"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND3 Pin=C3-1
+Added Pin To Net: NetName=GND3 Pin=J1_2-1
+Added Pin To Net: NetName=GND3 Pin=JP3-2
+Added Pin To Net: NetName=GND3 Pin=JP3-4
+Added Pin To Net: NetName=GND3 Pin=JP Nguon-1
+Added Pin To Net: NetName=5V Pin=JP Nguon-2
+Added Pin To Net: NetName=GND3 Pin=U1-J2-14
+Change Net Name : Old Net Name=GND3 New Net Name=GND1
+Added Member To Class: ClassName=Sheet1 Member=Component JP Nguon JP2
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-DEVKITC-32D
+Added Room: Name=Sheet1

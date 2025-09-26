@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=GND Pin=U1-J3-1
+Added Net: Name=GND
+Added Member To Class: ClassName=Sheet1 Member=Component RL2 Relay 5V
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-DEVKITC-32D
+Added Room: Name=Sheet1
