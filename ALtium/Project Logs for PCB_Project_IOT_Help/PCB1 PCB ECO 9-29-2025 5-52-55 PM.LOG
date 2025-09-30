@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=U2 Old Footprint=DIP 4 New Footprint=DIP4/W0.3
+Change Component Footprint: Designator=U3 Old Footprint=DIP 4 New Footprint=DIP4/W0.3
+Change Component Comment : Designator=U2 Old Comment=PC817B New Comment=PC817
+Change Component Comment : Designator=U3 Old Comment=PC817B New Comment=PC817
+Change Component Designator: OldDesignator=U? NewDesignator=U1
+Change component parameters: Designator = "U2" ("U2"); Footprint = "DIP 4"; UniqueID = "\JFAOXJOM" ("\JFAOXJOM")
+Change component parameters (AddParameter): Name = "Value"; Value = "PC817"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U3" ("U3"); Footprint = "DIP 4"; UniqueID = "\YTUAFRYV" ("\YTUAFRYV")
+Change component parameters (AddParameter): Name = "Value"; Value = "PC817"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-DEVKITC-32D
+Added Room: Name=Sheet1

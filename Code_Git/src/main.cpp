@@ -19,9 +19,6 @@ int errorCount = 0;
 #define BLYNK_AUTH_TOKEN "kNDkR1p17mJJ6lcBspS4ivnyDhQnqiA9"
 
 #include <BlynkSimpleEsp32.h>
-// #include <TimeLib.h>
-// #include <WidgetRTC.h>
-
 // ========== End Blynk ============= 
 
 // ========= SenSor ============
@@ -38,16 +35,16 @@ int thresold_BUI = 100;    // µg/m3
 
 // LED
 #define LED_NhietDo 22
-#define LED_DoAm 19
+#define LED_DoAm 5
 #define LED_Bui 4
 
 // DHT11
 #define DHTtype DHT11
-#define DHTpin 14
+#define DHTpin 32
 DHT dht(DHTpin , DHTtype);
 
 // SharpGP2Y10
-#define v0Pin 32
+#define v0Pin 14
 #define ledPin 26
 SharpGP2Y10 dustSensor(v0Pin , ledPin);
 
@@ -56,7 +53,6 @@ void readSensor() {
   h = dht.readHumidity();
   dust = dustSensor.readDustDensity();
 }
-
 // =============== End Sensor ==================
 
 
@@ -68,7 +64,7 @@ bool manualMode = false;  // false = Auto, true = Manual
 void sendSensor() {
   readSensor();
 
-  if(isnan(t) || isnan(h) || dust < 0 || dust > 1000)
+  if(isnan(t) && isnan(h) && dust < 0 && dust > 1000)
   {
     // Serial.println("Failed to read from DHT and SharpGP2Y10 sensor !");
     // return;
@@ -94,8 +90,8 @@ void printValueSenSor() {
 
 
 // =========== Wifi ====================
-const char* ssid = "SN44";
-const char* password = "mothaiba";
+const char* ssid = "Wifi Chua";
+const char* password = "7780990204@Ok";
 
 void wifiEvent(WiFiEvent_t event) {
   switch (event)
@@ -116,7 +112,7 @@ void wifiEvent(WiFiEvent_t event) {
 }
 
 void initWifi() {
-  WiFi.mode(WIFI_STA);            // AP STA AP_STA
+  WiFi.mode(WIFI_STA);            
   WiFi.begin(ssid , password);
   Serial.println("Connecting to Wifi ...");
   WiFi.onEvent(wifiEvent);
@@ -179,7 +175,6 @@ void handleWebSocketRequest(void * arg, uint8_t *data, size_t len) {
       Blynk.virtualWrite(V10 , thresold_NHIETDO);
       prefs.putInt("NhietDo" , thresold_NHIETDO);
       Serial.println(getSliderValues());
-
       notifyClients(getSliderValues()); 
     }
 
@@ -298,7 +293,7 @@ void loop() {
   if(now - lastSend >= SEND_INTERVAL) {
     lastSend = now;
 
-    if (t==-999 || h==-999 || dust<0 || dust>250) {
+    if (t==-999 && h==-999 && dust<0 && dust>250) {
       t = -999;
       h = -999;
       dust = -999;
@@ -310,7 +305,7 @@ void loop() {
     data["dust"] = dust;
     String payload = JSON.stringify(data);
 
-    Serial.println("gia tri doc len Web");
+    Serial.println("gia tri doc len Web: ");
     ws.textAll(payload);
     Serial.println(payload);
 
@@ -318,29 +313,35 @@ void loop() {
   }
 
   //// Relay on/off (chỉ chạy khi ở chế độ Auto)
-  if (!manualMode && t!=-999 && h!=-999 && dust!=-999) {
+  if (!manualMode && (t!=-999 || h!=-999 || dust!=-999)) {
     if(t > thresold_NHIETDO) {
       digitalWrite(LED_NhietDo , HIGH);
       Blynk.virtualWrite(V3 , HIGH);
+      Blynk.virtualWrite(V6 , HIGH);
     } else {
       digitalWrite(LED_NhietDo , LOW);
       Blynk.virtualWrite(V3 , LOW);
+      Blynk.virtualWrite(V6 , LOW);
     }
     
     if(h < thresold_DOAM) {
       digitalWrite(LED_DoAm , HIGH);
       Blynk.virtualWrite(V4 , HIGH);
+      Blynk.virtualWrite(V7 , HIGH);
     } else {
       digitalWrite(LED_DoAm , LOW);
       Blynk.virtualWrite(V4 , LOW);
+      Blynk.virtualWrite(V7 , LOW);
     }
     
     if(dust > thresold_BUI) {
       digitalWrite(LED_Bui , HIGH);
       Blynk.virtualWrite(V5 , HIGH);
+      Blynk.virtualWrite(V8 , HIGH);
     } else {
       digitalWrite(LED_Bui , LOW);
       Blynk.virtualWrite(V5 , LOW);
+      Blynk.virtualWrite(V8 , LOW);
     }
   }
 

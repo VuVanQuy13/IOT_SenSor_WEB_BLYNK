@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetR1_2 Pin=U1-1
+Removed Pin From Net: NetName=GND3 Pin=U1-2
+Removed Pin From Net: NetName=NetR1.1_2 Pin=U1-3
+Removed Pin From Net: NetName=5V Pin=U1-4
+Added Component: Designator=U?(DIP4/W0.3)
+Add component (AddParameter): Name = "Value"; Value = "PC817"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR1_2 Pin=U?-1
+Added Pin To Net: NetName=GND3 Pin=U?-2
+Added Pin To Net: NetName=NetR1.1_2 Pin=U?-3
+Added Pin To Net: NetName=5V Pin=U?-4
+Added Member To Class: ClassName=Sheet1 Member=Component U? PC817
+Added Room: Name=Sheet1

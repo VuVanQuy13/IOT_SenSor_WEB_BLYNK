@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=3V3 Pin=R1-1
+Removed Pin From Net: NetName=GND3 Pin=R1.2-2
+Removed Pin From Net: NetName=GND3 Pin=R2.2-2
+Removed Pin From Net: NetName=GND3 Pin=R3.2-2
+Removed Pin From Net: NetName=LED_TEMP Pin=U1-2
+Added Pin To Net: NetName=COM1 Pin=LED1-2
+Added Pin To Net: NetName=COM2 Pin=LED2-2
+Added Pin To Net: NetName=COM3 Pin=LED3-2
+Added Pin To Net: NetName=LED_TEMP Pin=R1-1
+Added Pin To Net: NetName=3V3 Pin=R1.2-2
+Added Pin To Net: NetName=3V3 Pin=R2.2-2
+Added Pin To Net: NetName=3V3 Pin=R3.2-2
+Added Pin To Net: NetName=GND3 Pin=RL1-3
+Added Pin To Net: NetName=GND3 Pin=RL2-3
+Added Pin To Net: NetName=GND3 Pin=RL3-3
+Added Pin To Net: NetName=GND3 Pin=U1-2
+Added Pin To Net: NetName=NetLED1_1 Pin=LED1-1
+Added Pin To Net: NetName=NetLED1_1 Pin=R1.2-1
+Added Net: Name=NetLED1_1
+Added Pin To Net: NetName=NetLED2_1 Pin=LED2-1
+Added Pin To Net: NetName=NetLED2_1 Pin=R2.2-1
+Added Net: Name=NetLED2_1
+Added Pin To Net: NetName=NetLED3_1 Pin=LED3-1
+Added Pin To Net: NetName=NetLED3_1 Pin=R3.2-1
+Added Net: Name=NetLED3_1
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-DEVKITC-32D
+Added Room: Name=Sheet1
