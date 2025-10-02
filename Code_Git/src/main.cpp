@@ -17,21 +17,20 @@ int errorCount = 0;
 #define BLYNK_TEMPLATE_ID "TMPL6Jz6zCaGZ"
 #define BLYNK_TEMPLATE_NAME "IOT Measure Sensor"
 #define BLYNK_AUTH_TOKEN "kNDkR1p17mJJ6lcBspS4ivnyDhQnqiA9"
-
 #include <BlynkSimpleEsp32.h>
-// ========== End Blynk ============= 
+
 
 // ========= SenSor ============
 unsigned long lastSend = 0;
 const unsigned long SEND_INTERVAL = 2000; // ms
-double t = -999;
-double h = -999;
-double dust = -999; 
+float t = -999;
+float h = -999;
+float dust = -999; 
 
 // Ngưỡng cài đặt
 int thresold_NHIETDO = 35;   // độ C
 int thresold_DOAM = 80;      // %
-int thresold_BUI = 100;    // µg/m3
+int thresold_BUI = 8.15;    // µg/m3
 
 // LED
 #define LED_NhietDo 22
@@ -44,7 +43,7 @@ int thresold_BUI = 100;    // µg/m3
 DHT dht(DHTpin , DHTtype);
 
 // SharpGP2Y10
-#define v0Pin 14
+#define v0Pin 33
 #define ledPin 26
 SharpGP2Y10 dustSensor(v0Pin , ledPin);
 
@@ -52,6 +51,8 @@ void readSensor() {
   t = dht.readTemperature();
   h = dht.readHumidity();
   dust = dustSensor.readDustDensity();
+
+  Serial.printf("Temp: %.1f | Humi: %.1f | Dust: %.2f\n", t, h, dust);
 }
 // =============== End Sensor ==================
 
@@ -60,11 +61,8 @@ void readSensor() {
 BlynkTimer timer;
 bool manualMode = false;  // false = Auto, true = Manual
 
-
-void sendSensor() {
-  readSensor();
-
-  if(isnan(t) && isnan(h) && dust < 0 && dust > 1000)
+void sendSensorBlynk() {
+  if(isnan(t) || isnan(h) || dust < 0 || dust > 1000)
   {
     // Serial.println("Failed to read from DHT and SharpGP2Y10 sensor !");
     // return;
@@ -90,8 +88,8 @@ void printValueSenSor() {
 
 
 // =========== Wifi ====================
-const char* ssid = "Wifi Chua";
-const char* password = "7780990204@Ok";
+const char* ssid = "SN44";
+const char* password = "mothaiba";
 
 void wifiEvent(WiFiEvent_t event) {
   switch (event)
@@ -117,7 +115,7 @@ void initWifi() {
   Serial.println("Connecting to Wifi ...");
   WiFi.onEvent(wifiEvent);
 }
-// ================== End Wifi =======================
+
 
 
 // ================= SPIFFS ==================
@@ -129,7 +127,6 @@ void initSPIFFS() {
     Serial.println("SPIFFS mounted successfully.");
   }
 }
-// ================== End SPIFFS ===================
 
 
 // ========= Server , WebSocket ==========
@@ -153,7 +150,6 @@ String getSliderValues() {
   return jsonString;
 }
 
-// Gửi cho người số 2 3 4 5 6 
 void notifyClients(String respone) {
   ws.textAll(respone);
 }
@@ -236,10 +232,31 @@ void initWebSocket() {
   server.addHandler(&ws);
 }
 
+void sendSenSorWeb() {
+    if (t==-999 && h==-999 && dust<0 && dust>250) {
+      t = -999;
+      h = -999;
+      dust = -999;
+    }
+
+    JSONVar data;
+    data["temperature"] = t;
+    data["humidity"] = h;
+    data["dust"] = dust;
+    String payload = JSON.stringify(data);
+
+    Serial.println("gia tri doc len Web: ");
+    ws.textAll(payload);
+    Serial.println(payload);
+    ws.cleanupClients();
+}
 
 
 void setup() {
   Serial.begin(9600);
+  dht.begin();
+  dustSensor.begin();
+
   delay(1000);
   esp_task_wdt_init(WDT_TIMEOUT , true);
   esp_task_wdt_add(NULL);
@@ -249,7 +266,6 @@ void setup() {
   pinMode(LED_DoAm, OUTPUT);
   pinMode(LED_Bui, OUTPUT);
 
-  dht.begin();
 
   prefs.begin("Gia tri nguong" ,false);
   thresold_NHIETDO = prefs.getInt("NhietDo", 35);
@@ -272,44 +288,23 @@ void setup() {
   server.serveStatic("/" , SPIFFS , "/");
   server.begin();
 
+
   // ======== Blynk ==========
   Blynk.begin(BLYNK_AUTH_TOKEN , ssid , password);
-  timer.setInterval(3000L , sendSensor);
 }
 
 void loop() {
-
-  // ======== Blynk ==========
   Blynk.run();
-  timer.run();
-  // ======= end Blynk =========
-
 
   unsigned long now = millis();
   readSensor();
-
 
   // send for clients
   if(now - lastSend >= SEND_INTERVAL) {
     lastSend = now;
 
-    if (t==-999 && h==-999 && dust<0 && dust>250) {
-      t = -999;
-      h = -999;
-      dust = -999;
-    }
-
-    JSONVar data;
-    data["temperature"] = t;
-    data["humidity"] = h;
-    data["dust"] = dust;
-    String payload = JSON.stringify(data);
-
-    Serial.println("gia tri doc len Web: ");
-    ws.textAll(payload);
-    Serial.println(payload);
-
-    ws.cleanupClients();
+    sendSenSorWeb();
+    sendSensorBlynk();
   }
 
   //// Relay on/off (chỉ chạy khi ở chế độ Auto)
@@ -403,9 +398,7 @@ BLYNK_WRITE(V10) {
   sensor1 = String(thresold_NHIETDO);
   prefs.putInt("NhietDo", thresold_NHIETDO);
 
-  // Gửi lại cho web
   notifyClients(getSliderValues());
-
   Serial.printf("Slider V10 set threshold: %d\n", thresold_NHIETDO);
 }
 

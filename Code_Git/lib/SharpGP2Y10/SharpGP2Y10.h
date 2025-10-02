@@ -2,6 +2,7 @@
 #define SharpGP2Y10_h
 
 #include <Arduino.h>
+#include <Wire.h>
 
 class SharpGP2Y10 {
   private:

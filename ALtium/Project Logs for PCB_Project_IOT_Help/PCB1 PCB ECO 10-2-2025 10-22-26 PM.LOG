@@ -1,0 +1,13 @@
+Added Component: Designator=*(ESP32 DEVKIT)
+Added Pin To Net: NetName=3V3 Pin=*-1
+Added Pin To Net: NetName=Data Pin=*-7
+Added Pin To Net: NetName=V0 Pin=*-8
+Added Pin To Net: NetName=LED Pin=*-10
+Added Pin To Net: NetName=GND3 Pin=*-14
+Added Pin To Net: NetName=5V Pin=*-19
+Added Pin To Net: NetName=LED_DUST Pin=*-26
+Added Pin To Net: NetName=LED_HUM Pin=*-29
+Added Pin To Net: NetName=LED_TEMP Pin=*-36
+Added Member To Class: ClassName=Sheet1 Member=Component * ESP32 DEV KIT
+Added Member To Class: ClassName=Sheet1 Member=Component U1 PC817
+Added Room: Name=Sheet1
