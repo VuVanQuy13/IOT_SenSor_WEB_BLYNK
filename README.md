@@ -34,14 +34,14 @@ Hệ thống hỗ trợ **chế độ Tự động/Thủ công** và cho phép �
 ---
 
 ## 📂 Cấu trúc dự án
-├── firmware/ # Code ESP32
-├── data/ # File HTML, CSS, JS cho SPIFFS
-└── README.md
+├── firmware/ # Code ESP32  
+├── data/ # File HTML, CSS, JS cho SPIFFS  
+└── README.md    
 
-## Giao diện Web Dashboard:
-<img width="1917" height="913" alt="image" src="https://github.com/user-attachments/assets/ed7c83a6-ef63-4d88-a2bc-2574b901cb92" /> 
-## Giao diện BLYNK:
-<img width="1617" height="742" alt="image" src="https://github.com/user-attachments/assets/f35b83a9-2b18-497a-9ec4-69e8e346aa2f" />
+## Giao diện Web Dashboard:  
+<img width="1917" height="913" alt="image" src="https://github.com/user-attachments/assets/ed7c83a6-ef63-4d88-a2bc-2574b901cb92" />   
+## Giao diện BLYNK:  
+<img width="1617" height="742" alt="image" src="https://github.com/user-attachments/assets/f35b83a9-2b18-497a-9ec4-69e8e346aa2f" />  
 
 
 
