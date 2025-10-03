@@ -3,7 +3,7 @@
 ## 📌 Giới thiệu
 Đây là một **hệ thống IoT giám sát môi trường** sử dụng **ESP32**.  
 Hệ thống có khả năng đo **nhiệt độ, độ ẩm và mật độ bụi**, sau đó hiển thị dữ liệu theo thời gian thực trên:  
-- **Web Dashboard** (HTML/CSS/Bootstrap + WebSocket) chạy trực tiếp trên ESP32.  
+- **Web Dashboard** (HTML/CSS + WebSocket) chạy trực tiếp trên ESP32.  
 - **Ứng dụng Blynk IoT** để giám sát và điều khiển từ xa qua Internet.  
 
 Hệ thống hỗ trợ **chế độ Tự động/Thủ công** và cho phép điều chỉnh ngưỡng cảnh báo ngay trên **giao diện web** hoặc **app Blynk**. Giá trị ngưỡng được lưu trong **Preferences (EEPROM giả lập của ESP32)** để không bị mất sau khi khởi động lại.
