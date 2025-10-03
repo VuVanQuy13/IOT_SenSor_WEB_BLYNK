@@ -54,7 +54,6 @@ void readSensor() {
 
   Serial.printf("Temp: %.1f | Humi: %.1f | Dust: %.2f\n", t, h, dust);
 }
-// =============== End Sensor ==================
 
 
 // =============== Blynk ===============
@@ -84,7 +83,6 @@ void sendSensorBlynk() {
 void printValueSenSor() {
   
 }
-// =========== End Blynk =================
 
 
 // =========== Wifi ====================
@@ -117,7 +115,6 @@ void initWifi() {
 }
 
 
-
 // ================= SPIFFS ==================
 void initSPIFFS() {
   if(!SPIFFS.begin()) {
@@ -134,13 +131,12 @@ AsyncWebServer server(80);
 AsyncWebSocket ws("/ws");
 
 // ============= WebSocket ===============
-JSONVar responeSensor;                           // Nếu gửi JSON dạng thủ công thì k cần dùng
+JSONVar responeSensor;                           
 String message = "";
 String sensor1 = "0";
 String sensor2 = "0";
 String sensor3 = "0";
 
-// Gửi giao diện 
 String getSliderValues() {
   responeSensor["sensor1"] = String(sensor1);
   responeSensor["sensor2"] = String(sensor2);
@@ -158,9 +154,8 @@ void handleWebSocketRequest(void * arg, uint8_t *data, size_t len) {
   AwsFrameInfo *info = (AwsFrameInfo*) arg;
 
   if(info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT) {
-    // Xử lí khi nhận được request
     char msg[len + 1];        
-    memcpy(msg, data, len);   // Copy dữ liệu từ data sang msg
+    memcpy(msg, data, len);   
     msg[len] = '\0';          
     message = String(msg);    
 
@@ -194,7 +189,6 @@ void handleWebSocketRequest(void * arg, uint8_t *data, size_t len) {
       notifyClients(getSliderValues()); 
     }
 
-    // Ban đầu trình duyệt khi chưa có dữ liệu
     if(strcmp((char *)data , "getValues") == 0) {
       Serial.printf("Gia tri ban dau %s\n" , getSliderValues());
       notifyClients(getSliderValues());
@@ -288,7 +282,6 @@ void setup() {
   server.serveStatic("/" , SPIFFS , "/");
   server.begin();
 
-
   // ======== Blynk ==========
   Blynk.begin(BLYNK_AUTH_TOKEN , ssid , password);
 }
@@ -299,7 +292,6 @@ void loop() {
   unsigned long now = millis();
   readSensor();
 
-  // send for clients
   if(now - lastSend >= SEND_INTERVAL) {
     lastSend = now;
 
