@@ -46,10 +46,10 @@ Hệ thống hỗ trợ **chế độ Tự động/Thủ công** và cho phép �
 
 
 ## Altium:
-- **SCH: 
+- **SCH**: 
 <img width="1081" height="717" alt="image" src="https://github.com/user-attachments/assets/3a977b6c-a00d-4419-afe5-d5c3162974ae" />
 
-- **PCB:
+- **PCB**:
 <img width="1119" height="712" alt="image" src="https://github.com/user-attachments/assets/37066228-31f4-4d04-9528-03fb1f0f843e" />
 
 ## Mạch Hoàn Thiện:
