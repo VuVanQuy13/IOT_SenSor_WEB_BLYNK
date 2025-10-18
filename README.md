@@ -45,4 +45,16 @@ Hệ thống hỗ trợ **chế độ Tự động/Thủ công** và cho phép �
 <img width="1617" height="742" alt="image" src="https://github.com/user-attachments/assets/f35b83a9-2b18-497a-9ec4-69e8e346aa2f" />  
 
 
+## Altium:
+- **SCH: 
+<img width="1081" height="717" alt="image" src="https://github.com/user-attachments/assets/3a977b6c-a00d-4419-afe5-d5c3162974ae" />
+
+- **PCB:
+<img width="1119" height="712" alt="image" src="https://github.com/user-attachments/assets/37066228-31f4-4d04-9528-03fb1f0f843e" />
+
+## Mạch Hoàn Thiện:
+![ALtium](https://github.com/user-attachments/assets/f8a46e01-963e-4a49-8875-94911fc64c47)
+
+![Duoi](https://github.com/user-attachments/assets/4c70fc32-14a1-4549-aa13-a8ec93be3b7f)
+
 
