@@ -32,7 +32,7 @@ int SharpGP2Y10::readRaw() {
 // Lấy giá trị Vôn
 float SharpGP2Y10::readVoltage() {
   int raw = readRaw();
-  return raw * (3.3 / 4095);   // Nếu dùng 3.3V thì sửa thành (3.3 / 4096.0) cho ESP32
+  return raw * (3.3 / 4096);   // Nếu dùng 3.3V thì sửa thành (3.3 / 4096.0) cho ESP32
 }
 
 // Lấy giá trị bụi

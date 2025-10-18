@@ -35,16 +35,16 @@ int thresold_BUI = 8.15;    // µg/m3
 // LED
 #define LED_NhietDo 22
 #define LED_DoAm 5
-#define LED_Bui 4
+#define LED_Bui 2
 
 // DHT11
 #define DHTtype DHT11
-#define DHTpin 32
+#define DHTpin 13
 DHT dht(DHTpin , DHTtype);
 
 // SharpGP2Y10
-#define v0Pin 33
-#define ledPin 26
+#define v0Pin 34
+#define ledPin 25
 SharpGP2Y10 dustSensor(v0Pin , ledPin);
 
 void readSensor() {
@@ -322,6 +322,7 @@ void loop() {
     }
     
     if(dust > thresold_BUI) {
+      Serial.println("Led dust on");
       digitalWrite(LED_Bui , HIGH);
       Blynk.virtualWrite(V5 , HIGH);
       Blynk.virtualWrite(V8 , HIGH);
