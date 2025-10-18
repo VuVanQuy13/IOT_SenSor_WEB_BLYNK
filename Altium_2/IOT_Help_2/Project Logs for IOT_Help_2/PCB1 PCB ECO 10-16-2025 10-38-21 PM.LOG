@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=gnd3 Pin=*-14
+Removed Pin From Net: NetName=gnd3 Pin=DHT11-1
+Removed Pin From Net: NetName=gnd3 Pin=SharpGP2Y10-4
+Added Pin To Net: NetName=gnd3 Pin=*-32
+Added Pin To Net: NetName=gnd1 Pin=*-14
+Added Pin To Net: NetName=gnd1 Pin=DHT11-1
+Added Pin To Net: NetName=gnd1 Pin=SharpGP2Y10-4
+Added Net: Name=gnd1
+Added Room: Name=SCH

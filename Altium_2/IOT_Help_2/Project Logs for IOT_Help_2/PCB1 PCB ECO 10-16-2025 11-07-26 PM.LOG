@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=com1 Pin=LED2-2
+Removed Pin From Net: NetName=com1 Pin=LED3-2
+Removed Pin From Net: NetName=com1 Pin=RL2-1
+Removed Pin From Net: NetName=com1 Pin=RL3-1
+Added Pin To Net: NetName=com2 Pin=LED2-2
+Added Pin To Net: NetName=com2 Pin=RL2-1
+Added Net: Name=com2
+Added Pin To Net: NetName=com3 Pin=LED3-2
+Added Pin To Net: NetName=com3 Pin=RL3-1
+Added Net: Name=com3
+Added Room: Name=SCH

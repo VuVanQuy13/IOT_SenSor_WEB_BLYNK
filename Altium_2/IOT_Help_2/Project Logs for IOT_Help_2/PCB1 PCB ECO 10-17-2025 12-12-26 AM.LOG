@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=v0 Pin=*-11
+Added Pin To Net: NetName=v0 Pin=*-5
+Added Room: Name=SCH

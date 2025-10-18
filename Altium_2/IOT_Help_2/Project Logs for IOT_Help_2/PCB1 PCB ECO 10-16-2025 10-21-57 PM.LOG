@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=led Pin=*-5
+Removed Pin From Net: NetName=data Pin=*-7
+Removed Pin From Net: NetName=v0 Pin=*-9
+Added Pin To Net: NetName=led Pin=*-9
+Added Pin To Net: NetName=v0 Pin=*-11
+Added Pin To Net: NetName=data Pin=*-13
+Added Room: Name=SCH

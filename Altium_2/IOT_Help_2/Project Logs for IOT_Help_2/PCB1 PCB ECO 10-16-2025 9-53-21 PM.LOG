@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=H? NewDesignator=DHT11
+Change Component Designator: OldDesignator=H? NewDesignator=Header 3V
+Change Component Designator: OldDesignator=H? NewDesignator=SharpGP2Y10
+Added Member To Class: ClassName=SCH Member=Component DHT11
+Added Member To Class: ClassName=SCH Member=Component Header 3V
+Added Member To Class: ClassName=SCH Member=Component SharpGP2Y10
+Added Room: Name=SCH

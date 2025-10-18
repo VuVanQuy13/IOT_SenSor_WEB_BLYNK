@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=gnd1 Pin=Header 3V-1
+Removed Pin From Net: NetName=3v3 Pin=Header 3V-2
+Removed Pin From Net: NetName=gnd1 Pin=Header 5V-1
+Removed Pin From Net: NetName=5v Pin=Header 5V-2
+Removed Member From Class: ClassName=SCH Member=Header 3V
+Removed Member From Class: ClassName=SCH Member=Header 5V
+Added Component: Designator=3v3(JP 1x1 DT)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH000904"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Jump Ðon Ð?c 2.54MM 1x40P Cong Ð?ng"; VariantName = "[No Variations]"
+Added Component: Designator=5v(JP 1x1 DT)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH000904"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Jump Ðon Ð?c 2.54MM 1x40P Cong Ð?ng"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3v3 Pin=3v3-1
+Added Pin To Net: NetName=5v Pin=5v-1
+Added Member To Class: ClassName=SCH Member=Component 3v3
+Added Member To Class: ClassName=SCH Member=Component 5v
+Added Room: Name=SCH

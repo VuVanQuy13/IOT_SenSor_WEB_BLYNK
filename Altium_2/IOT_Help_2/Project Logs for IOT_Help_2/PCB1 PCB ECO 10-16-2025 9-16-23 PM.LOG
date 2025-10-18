@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=led Pin=H?-3
+Removed Pin From Net: NetName=v0 Pin=H?-5
+Added Pin To Net: NetName=v0 Pin=H?-3
+Added Pin To Net: NetName=led Pin=H?-5
+Added Member To Class: ClassName=SCH Member=Component H? SharpGP2Y10
+Added Room: Name=SCH

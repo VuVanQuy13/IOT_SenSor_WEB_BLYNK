@@ -1,0 +1,26 @@
+Added Component: Designator=H?(XH2.54M-6)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001972"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 6P XH2.54-6P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H?(XH2.54M-3)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001292"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 3P XH2.54-3P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=gnd3 Pin=H?-1
+Added Pin To Net: NetName=res Pin=H?-1
+Added Pin To Net: NetName=data Pin=H?-2
+Added Pin To Net: NetName=gnd3 Pin=H?-2
+Added Pin To Net: NetName=3v3 Pin=H?-3
+Added Pin To Net: NetName=led Pin=H?-3
+Added Pin To Net: NetName=gnd3 Pin=H?-4
+Added Pin To Net: NetName=v0 Pin=H?-5
+Added Pin To Net: NetName=5v Pin=H?-6
+Added Member To Class: ClassName=SCH Member=Component H? SharpGP2Y10
+Added Member To Class: ClassName=SCH Member=Component H? DHT11
+Added Room: Name=SCH
